@@ -1,0 +1,648 @@
+/* =============================================
+   EL IMPOSTOR — game.css
+   Pantalla de jugadores, coherente con landing
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800;900&display=swap');
+
+/* ── VARIABLES (mismo sistema que landing) ── */
+:root {
+  --bg:        #0a0a0a;
+  --bg-card:   #111111;
+  --bg-card-2: #161616;
+  --border:    #222222;
+  --accent:    #ff5c00;
+  --accent-2:  #ff8c00;
+  --text:      #f0ece4;
+  --muted:     #7a7570;
+  --muted-2:   #3d3a36;
+  --white:     #ffffff;
+}
+
+/* ── RESET ── */
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+
+body.game-page {
+  font-family: 'Barlow', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Grain overlay */
+body.game-page::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ============================================
+   NAVBAR
+   ============================================ */
+.navbar {
+  position: sticky; top: 0;
+  background: rgba(10,10,10,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 48px;
+  height: 68px;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.55rem;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo .logo-icon {
+  display: inline-flex;
+  align-items: center; justify-content: center;
+  width: 30px; height: 30px;
+  background: var(--accent);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.navbar-menu span {
+  display: block;
+  width: 22px; height: 2px;
+  background: var(--muted);
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
+.navbar-menu:hover span { background: var(--white); }
+
+/* ============================================
+   LAYOUT PRINCIPAL
+   ============================================ */
+.game-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 64px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ── Cabecera de sección ── */
+.game-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.game-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.game-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(3rem, 8vw, 4.5rem);
+  letter-spacing: 0.06em;
+  color: var(--white);
+  line-height: 1;
+}
+
+/* ============================================
+   PANEL PRINCIPAL (la "card" grande)
+   ============================================ */
+.game-panel {
+  width: 100%;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ── Estado vacío ── */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 32px;
+  gap: 16px;
+  text-align: center;
+}
+
+.empty-icon {
+  width: 72px; height: 72px;
+  opacity: 0.25;
+}
+
+.empty-icon svg {
+  width: 100%; height: 100%;
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.empty-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+.empty-sub {
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: 280px;
+  line-height: 1.6;
+}
+
+/* Botón añadir (dentro del panel vacío) */
+.btn-add-primary {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.btn-add-primary:hover {
+  background: var(--accent-2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255,92,0,0.28);
+}
+
+/* ── Lista de jugadores (cuando hay jugadores) ── */
+.players-list {
+  display: none; /* JS la mostrará */
+  flex-direction: column;
+}
+
+.players-list.has-players { display: flex; }
+
+.player-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s;
+  animation: slideIn 0.25s ease;
+}
+
+.player-item:last-child { border-bottom: none; }
+.player-item:hover { background: var(--bg-card-2); }
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.player-avatar {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--muted-2);
+  display: flex;
+  align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  color: var(--white);
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.player-name {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.player-remove {
+  background: none;
+  border: none;
+  color: var(--muted-2);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+  line-height: 1;
+}
+
+.player-remove:hover {
+  color: #ff4444;
+  background: rgba(255,68,68,0.08);
+}
+
+/* ── Pie del panel (cuando hay jugadores) ── */
+.panel-footer {
+  display: none;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  background: var(--bg-card-2);
+}
+
+.panel-footer.visible { display: flex; justify-content: space-between; align-items: center; }
+
+.player-count {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.player-count span { color: var(--accent); }
+
+.btn-add-small {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+}
+
+.btn-add-small:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(255,92,0,0.05);
+}
+
+/* ============================================
+   MODAL — Añadir jugador
+   ============================================ */
+.modal-overlay {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.75);
+  backdrop-filter: blur(6px);
+  z-index: 500;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay.open { display: flex; }
+
+.modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 36px 32px;
+  width: 100%;
+  max-width: 420px;
+  animation: modalIn 0.22s ease;
+}
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.modal-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.modal-input {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 1rem;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.2s;
+  margin-bottom: 20px;
+}
+
+.modal-input::placeholder { color: var(--muted); }
+.modal-input:focus { border-color: var(--accent); }
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.btn-cancel {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 11px 20px;
+  border-radius: 6px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-cancel:hover { color: var(--white); border-color: var(--muted); }
+
+.btn-confirm {
+  background: var(--accent);
+  border: none;
+  color: var(--white);
+  padding: 11px 24px;
+  border-radius: 6px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-confirm:hover { background: var(--accent-2); transform: translateY(-1px); }
+
+/* ============================================
+   ACCIONES INFERIORES
+   ============================================ */
+.game-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.btn-start {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  padding: 18px 32px;
+  border-radius: 8px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.btn-start.ready {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.btn-start.ready:hover {
+  background: var(--accent-2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 32px rgba(255,92,0,0.3);
+}
+
+.btn-back {
+  background: none;
+  border: none;
+  color: var(--muted);
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: color 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-back:hover { color: var(--white); }
+
+/* ============================================
+   FLIP CARDS (rol reveal — se reutiliza)
+   ============================================ */
+.flip-card {
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%; height: 100%;
+  transition: transform .6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner { transform: rotateY(180deg); }
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%; height: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  font-size: 4rem;
+}
+
+.flip-card-front p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.flip-card-back {
+  background: var(--accent);
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.08em;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: center;
+}
+
+.flip-card-back.impostor { background: #1a0a00; border: 2px solid var(--accent); }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 640px) {
+  .navbar { padding: 0 20px; }
+  .game-container { padding: 40px 16px 60px; }
+  .modal { padding: 28px 20px; }
+}
+
+/* ============================================
+   CONFIG GRID (impostores + categoría)
+   ============================================ */
+.config-grid {
+  display: none; /* JS añade .visible */
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.config-grid.visible { display: grid; }
+
+.config-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.config-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* Stepper */
+.config-stepper {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.stepper-btn {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.stepper-btn:hover { background: var(--muted-2); color: var(--white); }
+
+.stepper-val {
+  flex: 1;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  pointer-events: none;
+}
+
+/* Select de categoría */
+.config-select {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237a7570' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.config-select:focus { border-color: var(--accent); }
+.config-select option { background: var(--bg-card); }
+
+/* ============================================
+   REVEAL HINT
+   ============================================ */
+.reveal-hint {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+/* ============================================
+   RESPONSIVE EXTRA
+   ============================================ */
+@media (max-width: 480px) {
+  .config-grid { grid-template-columns: 1fr; }
+}

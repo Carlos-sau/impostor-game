@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Impostor - Descubre quién miente</title>
+  <link rel="stylesheet" href="./css/landing.css">
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="logo-icon">⚡</span>
+      EL IMPOSTOR
+    </div>
+    <div class="nav-links">
+      <a href="#how">Cómo se juega</a>
+      <a href="#rules">Reglas</a>
+      <a href="game2.html">Nueva versión</a>
+    </div>
+    <a href="game.html" class="play-btn">Jugar ahora</a>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero">
+
+    <!-- Texto -->
+    <div class="hero-content fade-in">
+      <span class="hero-badge">Gratis · Hasta 50 jugadores</span>
+      <h1>
+        Descubre<br>
+        <span class="accent-line">quién miente</span>
+      </h1>
+      <p>
+        Engaña, investiga y vota antes de que el impostor gane.
+      </p>
+      <div class="hero-buttons">
+        <a href="game.html" class="hero-button">
+          ⚡ Crear partida
+        </a>
+        <a href="#how" class="hero-button-ghost">Ver cómo funciona →</a>
+      </div>
+    </div>
+
+    <!-- Ilustración -->
+    <div class="hero-visual fade-in" style="transition-delay: 0.25s">
+      <div class="hero-illustration">
+        <div class="big-circle"></div>
+        <div class="hero-card">
+          <div class="hero-card-emoji">
+            <img src="./css/impostor.png" alt="impostor">
+          </div>
+          <div class="hero-card-label">¿Quién es el impostor?</div>
+          <div class="hero-card-tag">Descúbrelo</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+      <div class="stat-item fade-in" style="transition-delay:.1s">
+        <span class="stat-num">50</span>
+        <span class="stat-label">Jugadores máx.</span>
+      </div>
+      <div class="stat-item fade-in" style="transition-delay:.2s">
+        <span class="stat-num">6+</span>
+        <span class="stat-label">Categorías</span>
+      </div>
+      <div class="stat-item fade-in" style="transition-delay:.3s">
+        <span class="stat-num">0€</span>
+        <span class="stat-label">Completamente gratis</span>
+      </div>
+      <div class="stat-item fade-in" style="transition-delay:.4s">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Partidas jugadas</span>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══ CÓMO SE JUEGA ══ -->
+  <section id="how" class="section">
+    <div class="section-header fade-in">
+      <span class="section-label">Instrucciones</span>
+      <h2>Cómo se juega</h2>
+    </div>
+    <div class="steps-grid">
+      <div class="step fade-in" style="transition-delay:.05s">
+        <div class="step-num">01</div>
+        <div class="step-text">Añade los jugadores y elige cuántos impostores habrá en la partida.</div>
+      </div>
+      <div class="step fade-in" style="transition-delay:.1s">
+        <div class="step-num">02</div>
+        <div class="step-text">Cada jugador recibe su rol en secreto: ciudadano o impostor.</div>
+      </div>
+      <div class="step fade-in" style="transition-delay:.15s">
+        <div class="step-num">03</div>
+        <div class="step-text">Los ciudadanos conocen la palabra secreta; los impostores, no.</div>
+      </div>
+      <div class="step fade-in" style="transition-delay:.2s">
+        <div class="step-num">04</div>
+        <div class="step-text">Debatid, haced preguntas y votad para expulsar al impostor.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ REGLAS ══ -->
+  <section id="rules" class="section">
+    <div class="section-header fade-in">
+      <span class="section-label">Reglas del juego</span>
+      <h2>Cómo ganar</h2>
+    </div>
+    <div class="rules-grid">
+      <div class="rule-item fade-in">
+        <div class="rule-icon">✅</div>
+        <div class="rule-text">
+          <strong>Ciudadanos</strong>
+          Reciben una palabra secreta y deben defender que la conocen sin revelarla directamente.
+        </div>
+      </div>
+      <div class="rule-item fade-in" style="transition-delay:.08s">
+        <div class="rule-icon">🕵️</div>
+        <div class="rule-text">
+          <strong>Impostores</strong>
+          No conocen la palabra. Deben pasar desapercibidos escuchando y engañando.
+        </div>
+      </div>
+      <div class="rule-item fade-in" style="transition-delay:.12s">
+        <div class="rule-icon">💬</div>
+        <div class="rule-text">
+          <strong>El debate</strong>
+          Todos responden preguntas sobre la palabra. Quien dude demasiado, levanta sospechas.
+        </div>
+      </div>
+      <div class="rule-item fade-in" style="transition-delay:.16s">
+        <div class="rule-icon">🏆</div>
+        <div class="rule-text">
+          <strong>La votación</strong>
+          Gana el equipo que descubra (o sobreviva) a los impostores antes de que acabe el tiempo.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CATEGORÍAS ══ -->
+  <section class="section">
+    <div class="section-header fade-in">
+      <span class="section-label">Temáticas</span>
+      <h2>Elige categoría</h2>
+    </div>
+    <div class="categories">
+      <div class="category-card fade-in" style="transition-delay:.05s">
+        <span class="emoji">🍔</span>Comida
+      </div>
+      <div class="category-card fade-in" style="transition-delay:.10s">
+        <span class="emoji">🦁</span>Animales
+      </div>
+      <div class="category-card fade-in" style="transition-delay:.15s">
+        <span class="emoji">📍</span>Lugares
+      </div>
+      <div class="category-card fade-in" style="transition-delay:.20s">
+        <span class="emoji">📱</span>Objetos
+      </div>
+      <div class="category-card fade-in" style="transition-delay:.25s">
+        <span class="emoji">⚽</span>Deportes
+      </div>
+      <div class="category-card fade-in" style="transition-delay:.30s">
+        <span class="emoji">🎬</span>Cine
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FAQ ══ -->
+  <section id="faq" class="section">
+    <div class="section-header fade-in">
+      <span class="section-label">Dudas</span>
+      <h2>Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item fade-in">
+        <button class="faq-question">
+          ¿Cuántos jugadores pueden participar?
+          <i class="faq-icon">+</i>
+        </button>
+        <div class="faq-answer">
+          <p>Desde 3 hasta 50 jugadores. El juego escala perfectamente para grupos pequeños de amigos o grandes fiestas.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in" style="transition-delay:.05s">
+        <button class="faq-question">
+          ¿Puedo jugar desde el móvil?
+          <i class="faq-icon">+</i>
+        </button>
+        <div class="faq-answer">
+          <p>Sí, la web está diseñada para funcionar perfectamente en móviles, tablets y ordenadores.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in" style="transition-delay:.10s">
+        <button class="faq-question">
+          ¿Puedo tener varios impostores?
+          <i class="faq-icon">+</i>
+        </button>
+        <div class="faq-answer">
+          <p>Sí, puedes configurar el número de impostores antes de empezar la partida. Para grupos grandes recomendamos 2-3 impostores.</p>
+        </div>
+      </div>
+      <div class="faq-item fade-in" style="transition-delay:.15s">
+        <button class="faq-question">
+          ¿Hace falta registrarse?
+          <i class="faq-icon">+</i>
+        </button>
+        <div class="faq-answer">
+          <p>No, el juego es completamente gratuito y sin registro. Solo entra y crea tu partida en segundos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA FINAL ══ -->
+  <div class="cta-section fade-in">
+    <h2>¿Listo para <em>engañar</em>?</h2>
+    <p>Crea una partida en segundos. Sin registro. Gratis para siempre.</p>
+    <a href="game.html" class="hero-button">⚡ Empezar a jugar</a>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <span class="footer-logo">⚡ EL IMPOSTOR</span>
+    <span>© 2026 El Impostor · Juego social online</span>
+  </footer>
+
+  <!-- ══ JS: FAQ accordion + fade-in ══ -->
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // Intersection Observer para fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

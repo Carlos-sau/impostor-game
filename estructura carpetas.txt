@@ -1,0 +1,16 @@
+impostor-game/
+│
+├── index.html        ← LANDING
+├── game.html         ← JUEGO
+│
+├── css/
+│   ├── landing.css  
+│   └── game.css
+│
+├── js/
+│   ├── app.js        ← landing logic (si quieres)
+│   ├── game.js
+│   └── ui.js
+│
+└── data/
+    └── words.json

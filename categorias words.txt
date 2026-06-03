@@ -1,0 +1,23 @@
+frutas:
+Manzana, Plátano, Naranja, Fresa, Uva, Sandía, Piña, Mango, Durazno, Cereza, Limón, Kiwi, Papaya, Coco, Aguacate, Arándano, Frambuesa, Mora, Ciruela, Pera
+
+animales:
+León, Tigre, Elefante, Jirafa, Cebra, Mono, Panda, Koala, Canguro, Pingüino, Delfín, Ballena, Águila, Búho, Loro, Mariposa, Cocodrilo, Hipopótamo, Rinoceronte, Guepardo, Gorila, Oso, Lobo, Zorro, Ciervo
+
+fútbol:
+Fútbol, Baloncesto, Tenis, Béisbol, Soccer, Hockey, Golf, Natación, Correr, Ciclismo, Boxeo, Lucha, Surf, Esquí, Voleibol, Cricket, Rugby, Bádminton, Tiro con arco, Esgrima, Maratón, Portero, Estadio, Campeonato, Torneo
+
+pelis:
+Avatar, Titanic, Inception, Vengadores, Matrix, Gladiador, Tiburón, Rocky, Frozen, Shrek, Joker, Batman, Superman, Spiderman, La Guerra de las Galaxias, Harry Potter, Parque Jurásico, Terminator, Depredador, Alien, Indiana Jones, Godzilla, Transformers, Piratas del Caribe, Mujer Maravilla
+
+tecnología:
+Computadora, Teléfono inteligente, Tableta, Portátil, Internet, WiFi, Bluetooth, Cámara, Televisión, Radio, GPS, Dron, Robot, Inteligencia Artificial, Realidad Virtual, Computación en la nube, Base de datos, Algoritmo, Red, Servidor, Software, Hardware, Procesador, Memoria, Teclado
+
+música:
+Guitarra, Piano, Batería, Violín, Saxofón, Trompeta, Flauta, Arpa, Acordeón, Armónica, Jazz, Rock, Pop, Clásica, Blues, Ópera, Sinfonía, Concierto, Orquesta, Banda, Melodía, Ritmo, Armonía, Compositor, Director
+
+educación:
+Matemáticas, Ciencia, Historia, Geografía, Literatura, Biología, Química, Física, Arte, Música, Filosofía, Psicología, Economía, Sociología, Astronomía, Geología, Botánica, Zoología, Álgebra, Geometría, Gramática, Vocabulario, Enciclopedia, Laboratorio, Libro de texto
+
+videojuegos:
+Minecraft, Fortnite, Roblox, Among Us, League of Legends, Call of Duty, FIFA, Pokémon, Mario, Zelda, Sonic, Pac-Man, Tetris, Street Fighter, Mortal Kombat, Xbox, PlayStation, Nintendo, Control, Joystick, Subir nivel, Batalla final, Potenciador, Puntuación alta, Multijugador
