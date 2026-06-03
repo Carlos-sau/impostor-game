@@ -218,7 +218,7 @@ function renderPlayerTurn(gameData) {
 function showRole(gameData) {
 
     const player     = gameData[currentPlayerIndex];
-    const isImpostor = player.role === "Eres el impostor";
+    const isImpostor = player.isImpostor;
     const isLast     = currentPlayerIndex === gameData.length - 1;
 
     document.getElementById("app").innerHTML = `
@@ -241,10 +241,7 @@ function showRole(gameData) {
                         <p>Toca para revelar</p>
                     </div>
                     <div class="flip-card-back ${isImpostor ? "impostor" : ""}">
-                        ${isImpostor
-                            ? "🎭 ERES EL<br>IMPOSTOR"
-                            : `🔑 Tu palabra:<br><strong>${escapeHtml(player.role)}</strong>`
-                        }
+                        <strong>${escapeHtml(player.role)}</strong>
                     </div>
                 </div>
             </div>
