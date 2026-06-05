@@ -1,385 +1,1462 @@
 {
-  "todas": [
-    { "word": "Manzana", "similar": "Pera" },
-    { "word": "Plátano", "similar": "Sandía" },
-    { "word": "Naranja", "similar": "Mandarina" },
-    { "word": "Fresa", "similar": "Frambuesa" },
-    { "word": "Uva", "similar": "Pasa" },
-    { "word": "Sandía", "similar": "Melón" },
-    { "word": "Piña", "similar": "Papaya" },
-    { "word": "Mango", "similar": "Papaya" },
-    { "word": "Melocotón", "similar": "Nectarina" },
-    { "word": "Cereza", "similar": "Fresa" },
-    { "word": "Limón", "similar": "Lima" },
-    { "word": "Kiwi", "similar": "Maracuyá" },
-    { "word": "Papaya", "similar": "Mango" },
-    { "word": "Coco", "similar": "Palmera" },
-    { "word": "Aguacate", "similar": "Guacamole" },
-    { "word": "Arándano", "similar": "Mora" },
-    { "word": "Frambuesa", "similar": "Fresa" },
-    { "word": "Mora", "similar": "Arándano" },
-    { "word": "Ciruela", "similar": "Ciruela pasa" },
-    { "word": "Pera", "similar": "Manzana" },
-    { "word": "León", "similar": "Tigre" },
-    { "word": "Tigre", "similar": "Leopardo" },
-    { "word": "Elefante", "similar": "Mamut" },
-    { "word": "Jirafa", "similar": "Okapi" },
-    { "word": "Cebra", "similar": "Caballo" },
-    { "word": "Mono", "similar": "Chimpancé" },
-    { "word": "Panda", "similar": "Oso polar" },
-    { "word": "Koala", "similar": "Oso Perezoso" },
-    { "word": "Canguro", "similar": "Caballo" },
-    { "word": "Pingüino", "similar": "Ballena" },
-    { "word": "Delfín", "similar": "Marsopa" },
-    { "word": "Ballena", "similar": "Orca" },
-    { "word": "Águila", "similar": "Halcón" },
-    { "word": "Búho", "similar": "Lechuza" },
-    { "word": "Loro", "similar": "Pirata" },
-    { "word": "Mariposa", "similar": "Polilla" },
-    { "word": "Cocodrilo", "similar": "Caimán" },
-    { "word": "Hipopótamo", "similar": "Rinoceronte" },
-    { "word": "Rinoceronte", "similar": "Hipopótamo" },
-    { "word": "Guepardo", "similar": "Leopardo" },
-    { "word": "Gorila", "similar": "Orangután" },
-    { "word": "Oso", "similar": "Panda" },
-    { "word": "Lobo", "similar": "Coyote" },
-    { "word": "Zorro", "similar": "Chacal" },
-    { "word": "Ciervo", "similar": "Alce" },
-    { "word": "Fútbol", "similar": "Rugby" },
-    { "word": "Baloncesto", "similar": "Balonmano" },
-    { "word": "Tenis", "similar": "Pádel" },
-    { "word": "Béisbol", "similar": "Rugby" },
-    { "word": "Rugby", "similar": "Fútbol sala" },
-    { "word": "Hockey", "similar": "Golf" },
-    { "word": "Golf", "similar": "Minigolf" },
-    { "word": "Natación", "similar": "Waterpolo" },
-    { "word": "Correr", "similar": "Salto de Longuitud" },
-    { "word": "Ciclismo", "similar": "Triatlón" },
-    { "word": "Boxeo", "similar": "Kickboxing" },
-    { "word": "Lucha", "similar": "Judo" },
-    { "word": "Surf", "similar": "Kitesurf" },
-    { "word": "Esquí", "similar": "Snowboard" },
-    { "word": "Voleibol", "similar": "Voleibol playa" },
-    { "word": "Cricket", "similar": "Béisbol" },
-    { "word": "Rugby", "similar": "Fútbol americano" },
-    { "word": "Bádminton", "similar": "Tenis de mesa" },
-    { "word": "Tiro con arco", "similar": "Tiro olímpico" },
-    { "word": "Esgrima", "similar": "Kendo" },
-    { "word": "Maratón", "similar": "Triatlón" },
-    { "word": "Portero", "similar": "Guardameta" },
-    { "word": "Estadio", "similar": "Pabellón" },
-    { "word": "Campeonato", "similar": "Torneo" },
-    { "word": "Torneo", "similar": "Liga" },
-    { "word": "Avatar", "similar": "Dune" },
-    { "word": "Titanic", "similar": "Pearl Harbor" },
-    { "word": "Inception", "similar": "Interestelar" },
-    { "word": "Vengadores", "similar": "Liga de la Justicia" },
-    { "word": "Matrix", "similar": "Tron" },
-    { "word": "Gladiador", "similar": "Braveheart" },
-    { "word": "Tiburón", "similar": "Orca" },
-    { "word": "Rocky", "similar": "Creed" },
-    { "word": "Frozen", "similar": "Brave" },
-    { "word": "Shrek", "similar": "Fiona" },
-    { "word": "Joker", "similar": "El Guasón" },
-    { "word": "Batman", "similar": "Daredevil" },
-    { "word": "Superman", "similar": "Capitán América" },
-    { "word": "Spiderman", "similar": "Flash" },
-    { "word": "La Guerra de las Galaxias", "similar": "Star Trek" },
-    { "word": "Harry Potter", "similar": "Las Crónicas de Narnia" },
-    { "word": "Parque Jurásico", "similar": "El mundo perdido" },
-    { "word": "Terminator", "similar": "Robocop" },
-    { "word": "Depredador", "similar": "Alien" },
-    { "word": "Alien", "similar": "Depredador" },
-    { "word": "Indiana Jones", "similar": "Lara Croft" },
-    { "word": "Godzilla", "similar": "King Kong" },
-    { "word": "Transformers", "similar": "Robocop" },
-    { "word": "Piratas del Caribe", "similar": "La isla del tesoro" },
-    { "word": "Ordenador", "similar": "Portátil" },
-    { "word": "Movil", "similar": "Tableta" },
-    { "word": "Tableta", "similar": "iPad" },
-    { "word": "Portátil", "similar": "Ordenador" },
-    { "word": "Internet", "similar": "WiFi" },
-    { "word": "WiFi", "similar": "Bluetooth" },
-    { "word": "Bluetooth", "similar": "WiFi" },
-    { "word": "Cámara", "similar": "Videocámara" },
-    { "word": "Televisión", "similar": "Monitor" },
-    { "word": "Radio", "similar": "Podcast" },
-    { "word": "GPS", "similar": "Brújula digital" },
-    { "word": "Dron", "similar": "Helicóptero teledirigido" },
-    { "word": "Robot", "similar": "Androide" },
-    { "word": "Inteligencia Artificial", "similar": "Machine Learning" },
-    { "word": "Realidad Virtual", "similar": "Realidad Aumentada" },
-    { "word": "Computación en la nube", "similar": "Servidor remoto" },
-    { "word": "Base de datos", "similar": "Servidor" },
-    { "word": "Red", "similar": "Internet" },
-    { "word": "Servidor", "similar": "Base de datos" },
-    { "word": "Software", "similar": "Aplicación" },
-    { "word": "Hardware", "similar": "Componente" },
-    { "word": "Procesador", "similar": "Chip" },
-    { "word": "Memoria", "similar": "Disco duro" },
-    { "word": "Teclado", "similar": "Ratón" },
-    { "word": "Guitarra", "similar": "Bajo" },
-    { "word": "Piano", "similar": "Teclado" },
-    { "word": "Batería", "similar": "Percusión" },
-    { "word": "Violín", "similar": "Viola" },
-    { "word": "Saxofón", "similar": "Clarinete" },
-    { "word": "Trompeta", "similar": "Trombón" },
-    { "word": "Flauta", "similar": "Oboe" },
-    { "word": "Arpa", "similar": "Lira" },
-    { "word": "Acordeón", "similar": "Bandoneón" },
-    { "word": "Armónica", "similar": "Acordeón" },
-    { "word": "Jazz", "similar": "Blues" },
-    { "word": "Rock", "similar": "Metal" },
-    { "word": "Pop", "similar": "Dance" },
-    { "word": "Clásica", "similar": "Ópera" },
-    { "word": "Blues", "similar": "Jazz" },
-    { "word": "Ópera", "similar": "Lírica" },
-    { "word": "Sinfonía", "similar": "Concierto" },
-    { "word": "Concierto", "similar": "Recital" },
-    { "word": "Orquesta", "similar": "Banda" },
-    { "word": "Banda", "similar": "Grupo" },
-    { "word": "Melodía", "similar": "Armonía" },
-    { "word": "Ritmo", "similar": "Cadencia" },
-    { "word": "Armonía", "similar": "Melodía" },
-    { "word": "Compositor", "similar": "Director" },
-    { "word": "Director", "similar": "Compositor" },
-    { "word": "Matemáticas", "similar": "Álgebra" },
-    { "word": "Ciencia", "similar": "Biología" },
-    { "word": "Historia", "similar": "Geografía" },
-    { "word": "Geografía", "similar": "Historia" },
-    { "word": "Literatura", "similar": "Gramática" },
-    { "word": "Biología", "similar": "Zoología" },
-    { "word": "Química", "similar": "Física" },
-    { "word": "Física", "similar": "Química" },
-    { "word": "Arte", "similar": "Música" },
-    { "word": "Música", "similar": "Arte" },
-    { "word": "Filosofía", "similar": "Psicología" },
-    { "word": "Psicología", "similar": "Sociología" },
-    { "word": "Economía", "similar": "Sociología" },
-    { "word": "Sociología", "similar": "Psicología" },
-    { "word": "Astronomía", "similar": "Astrofísica" },
-    { "word": "Geología", "similar": "Botánica" },
-    { "word": "Botánica", "similar": "Zoología" },
-    { "word": "Zoología", "similar": "Botánica" },
-    { "word": "Álgebra", "similar": "Geometría" },
-    { "word": "Geometría", "similar": "Álgebra" },
-    { "word": "Gramática", "similar": "Vocabulario" },
-    { "word": "Vocabulario", "similar": "Gramática" },
-    { "word": "Enciclopedia", "similar": "Libro de texto" },
-    { "word": "Laboratorio", "similar": "Aula" },
-    { "word": "Libro de texto", "similar": "Enciclopedia" },
-    { "word": "Minecraft", "similar": "Terraria" },
-    { "word": "Fortnite", "similar": "PUBG" },
-    { "word": "Among Us", "similar": "Project Winter" },
-    { "word": "League of Legends", "similar": "Dota 2" },
-    { "word": "Call of Duty", "similar": "Battlefield" },
-    { "word": "FIFA", "similar": "PES" },
-    { "word": "Pokémon", "similar": "Digimon" },
-    { "word": "Mario kart", "similar": "Crash Team Racing" },
-    { "word": "Zelda", "similar": "Dark Souls" },
-    { "word": "Sonic", "similar": "Mario" },
-    { "word": "Pac-Man", "similar": "Galaga" },
-    { "word": "Tetris", "similar": "Puyo Puyo" },
-    { "word": "Street Fighter", "similar": "Mortal Kombat" },
-    { "word": "Mortal Kombat", "similar": "Street Fighter" }
+  "Todas":[
+    {
+      "word": "Pizza",
+      "similar": "Sushi"
+    },
+    {
+      "word": "Sushi",
+      "similar": "Tostada"
+    },
+    {
+      "word": "Tostada",
+      "similar": "Croqueta"
+    },
+    {
+      "word": "Croqueta",
+      "similar": "Empanada"
+    },
+    {
+      "word": "Empanada",
+      "similar": "Tortilla"
+    },
+    {
+      "word": "Tortilla",
+      "similar": "Ensalada"
+    },
+    {
+      "word": "Ensalada",
+      "similar": "Hamburguesa"
+    },
+    {
+      "word": "Hamburguesa",
+      "similar": "Galleta"
+    },
+    {
+      "word": "Galleta",
+      "similar": "Yogur"
+    },
+    {
+      "word": "Yogur",
+      "similar": "Paella"
+    },
+    {
+      "word": "Paella",
+      "similar": "Lasaña"
+    },
+    {
+      "word": "Lasaña",
+      "similar": "Churro"
+    },
+    {
+      "word": "Churro",
+      "similar": "Donut"
+    },
+    {
+      "word": "Donut",
+      "similar": "Bocadillo"
+    },
+    {
+      "word": "Bocadillo",
+      "similar": "Helado"
+    },
+    {
+      "word": "Helado",
+      "similar": "Albóndiga"
+    },
+    {
+      "word": "Albóndiga",
+      "similar": "Gazpacho"
+    },
+    {
+      "word": "Gazpacho",
+      "similar": "Risotto"
+    },
+    {
+      "word": "Risotto",
+      "similar": "Nachos"
+    },
+    {
+      "word": "Nachos",
+      "similar": "Pizza"
+    },
+    {
+      "word": "Delfín",
+      "similar": "Tigre"
+    },
+    {
+      "word": "Tigre",
+      "similar": "Pingüino"
+    },
+    {
+      "word": "Pingüino",
+      "similar": "Jirafa"
+    },
+    {
+      "word": "Jirafa",
+      "similar": "Canguro"
+    },
+    {
+      "word": "Canguro",
+      "similar": "Búho"
+    },
+    {
+      "word": "Búho",
+      "similar": "Pulpo"
+    },
+    {
+      "word": "Pulpo",
+      "similar": "Panda"
+    },
+    {
+      "word": "Panda",
+      "similar": "Lobo"
+    },
+    {
+      "word": "Lobo",
+      "similar": "Camaleón"
+    },
+    {
+      "word": "Camaleón",
+      "similar": "Koala"
+    },
+    {
+      "word": "Koala",
+      "similar": "León"
+    },
+    {
+      "word": "León",
+      "similar": "Erizo"
+    },
+    {
+      "word": "Erizo",
+      "similar": "Águila"
+    },
+    {
+      "word": "Águila",
+      "similar": "Tortuga"
+    },
+    {
+      "word": "Tortuga",
+      "similar": "Zorro"
+    },
+    {
+      "word": "Zorro",
+      "similar": "Hipopótamo"
+    },
+    {
+      "word": "Hipopótamo",
+      "similar": "Flamenco"
+    },
+    {
+      "word": "Flamenco",
+      "similar": "Gorila"
+    },
+    {
+      "word": "Gorila",
+      "similar": "Foca"
+    },
+    {
+      "word": "Foca",
+      "similar": "Delfín"
+    },
+    {
+      "word": "Aeropuerto",
+      "similar": "Biblioteca"
+    },
+    {
+      "word": "Biblioteca",
+      "similar": "Hospital"
+    },
+    {
+      "word": "Hospital",
+      "similar": "Museo"
+    },
+    {
+      "word": "Museo",
+      "similar": "Estadio"
+    },
+    {
+      "word": "Estadio",
+      "similar": "Playa"
+    },
+    {
+      "word": "Playa",
+      "similar": "Parque"
+    },
+    {
+      "word": "Parque",
+      "similar": "Castillo"
+    },
+    {
+      "word": "Castillo",
+      "similar": "Estación"
+    },
+    {
+      "word": "Estación",
+      "similar": "Teatro"
+    },
+    {
+      "word": "Teatro",
+      "similar": "Acuario"
+    },
+    {
+      "word": "Acuario",
+      "similar": "Universidad"
+    },
+    {
+      "word": "Universidad",
+      "similar": "Hotel"
+    },
+    {
+      "word": "Hotel",
+      "similar": "Cine"
+    },
+    {
+      "word": "Cine",
+      "similar": "Mercado"
+    },
+    {
+      "word": "Mercado",
+      "similar": "Zoo"
+    },
+    {
+      "word": "Zoo",
+      "similar": "Puerto"
+    },
+    {
+      "word": "Puerto",
+      "similar": "Desierto"
+    },
+    {
+      "word": "Desierto",
+      "similar": "Montaña"
+    },
+    {
+      "word": "Montaña",
+      "similar": "Isla"
+    },
+    {
+      "word": "Isla",
+      "similar": "Aeropuerto"
+    },
+    {
+      "word": "Bicicleta",
+      "similar": "Tren"
+    },
+    {
+      "word": "Tren",
+      "similar": "Avión"
+    },
+    {
+      "word": "Avión",
+      "similar": "Barco"
+    },
+    {
+      "word": "Barco",
+      "similar": "Patinete"
+    },
+    {
+      "word": "Patinete",
+      "similar": "Moto"
+    },
+    {
+      "word": "Moto",
+      "similar": "Helicóptero"
+    },
+    {
+      "word": "Helicóptero",
+      "similar": "Tranvía"
+    },
+    {
+      "word": "Tranvía",
+      "similar": "Submarino"
+    },
+    {
+      "word": "Submarino",
+      "similar": "Autobús"
+    },
+    {
+      "word": "Autobús",
+      "similar": "Taxi"
+    },
+    {
+      "word": "Taxi",
+      "similar": "Cohete"
+    },
+    {
+      "word": "Cohete",
+      "similar": "Furgoneta"
+    },
+    {
+      "word": "Furgoneta",
+      "similar": "Velero"
+    },
+    {
+      "word": "Velero",
+      "similar": "Globo"
+    },
+    {
+      "word": "Globo",
+      "similar": "Teleférico"
+    },
+    {
+      "word": "Teleférico",
+      "similar": "Tractor"
+    },
+    {
+      "word": "Tractor",
+      "similar": "Camión"
+    },
+    {
+      "word": "Camión",
+      "similar": "Metro"
+    },
+    {
+      "word": "Metro",
+      "similar": "Canoa"
+    },
+    {
+      "word": "Canoa",
+      "similar": "Bicicleta"
+    },
+    {
+      "word": "Ajedrez",
+      "similar": "Tetris"
+    },
+    {
+      "word": "Tetris",
+      "similar": "Puzle"
+    },
+    {
+      "word": "Baraja de Cartas",
+      "similar": "Puzle"
+    },
+    {
+      "word": "Puzle",
+      "similar": "Karaoke"
+    },
+    {
+      "word": "Karaoke",
+      "similar": "Billar"
+    },
+    {
+      "word": "Billar",
+      "similar": "Dardos"
+    },
+    {
+      "word": "Dardos",
+      "similar": "Consola"
+    },
+    {
+      "word": "Sonic",
+      "similar": "Pokémon"
+    },
+    {
+      "word": "Pokémon",
+      "similar": "Sonic"
+    },
+    {
+      "word": "Monopoly",
+      "similar": "Super Mario"
+    },
+    {
+      "word": "Super Mario",
+      "similar": "Sonic"
+    },
+    {
+      "word": "Trivial",
+      "similar": "Lego"
+    },
+    {
+      "word": "Lego",
+      "similar": "Puzle"
+    },
+    {
+      "word": "Pac-Man",
+      "similar": "Sonic"
+    },
+    {
+      "word": "Patines",
+      "similar": "Billar"
+    },
+    {
+      "word": "Cómic",
+      "similar": "Podcast"
+    },
+    {
+      "word": "Street Fighter",
+      "similar": "Pac-Man"
+    },
+    {
+      "word": "Podcast",
+      "similar": "Cómic"
+    },
+    {
+      "word": "Crucigrama",
+      "similar": "Cómin"
+    },
+    {
+      "word": "Zelda",
+      "similar": "Sonic"
+    },
+    {
+      "word": "Fútbol",
+      "similar": "Baloncesto"
+    },
+    {
+      "word": "Baloncesto",
+      "similar": "Tenis"
+    },
+    {
+      "word": "Tenis",
+      "similar": "Natación"
+    },
+    {
+      "word": "Natación",
+      "similar": "Atletismo"
+    },
+    {
+      "word": "Atletismo",
+      "similar": "Voleibol"
+    },
+    {
+      "word": "Voleibol",
+      "similar": "Rugby"
+    },
+    {
+      "word": "Rugby",
+      "similar": "Boxeo"
+    },
+    {
+      "word": "Boxeo",
+      "similar": "Esquí"
+    },
+    {
+      "word": "Esquí",
+      "similar": "Surf"
+    },
+    {
+      "word": "Surf",
+      "similar": "Golf"
+    },
+    {
+      "word": "Golf",
+      "similar": "Ciclismo"
+    },
+    {
+      "word": "Ciclismo",
+      "similar": "Escalada"
+    },
+    {
+      "word": "Escalada",
+      "similar": "Piragüismo"
+    },
+    {
+      "word": "Piragüismo",
+      "similar": "Hockey"
+    },
+    {
+      "word": "Hockey",
+      "similar": "Bádminton"
+    },
+    {
+      "word": "Bádminton",
+      "similar": "Gimnasia"
+    },
+    {
+      "word": "Gimnasia",
+      "similar": "Judo"
+    },
+    {
+      "word": "Judo",
+      "similar": "Pádel"
+    },
+    {
+      "word": "Pádel",
+      "similar": "Esgrima"
+    },
+    {
+      "word": "Esgrima",
+      "similar": "Fútbol"
+    },
+    {
+      "word": "Lámpara",
+      "similar": "Reloj"
+    },
+    {
+      "word": "Reloj",
+      "similar": "Tijeras"
+    },
+    {
+      "word": "Tijeras",
+      "similar": "Mochila"
+    },
+    {
+      "word": "Mochila",
+      "similar": "Llave"
+    },
+    {
+      "word": "Llave",
+      "similar": "Almohada"
+    },
+    {
+      "word": "Almohada",
+      "similar": "Espejo"
+    },
+    {
+      "word": "Espejo",
+      "similar": "Cepillo"
+    },
+    {
+      "word": "Cepillo",
+      "similar": "Maleta"
+    },
+    {
+      "word": "Maleta",
+      "similar": "Silla"
+    },
+    {
+      "word": "Silla",
+      "similar": "Mesa"
+    },
+    {
+      "word": "Mesa",
+      "similar": "Ventilador"
+    },
+    {
+      "word": "Ventilador",
+      "similar": "Paraguas"
+    },
+    {
+      "word": "Paraguas",
+      "similar": "Linterna"
+    },
+    {
+      "word": "Linterna",
+      "similar": "Cuaderno"
+    },
+    {
+      "word": "Cuaderno",
+      "similar": "Gafas"
+    },
+    {
+      "word": "Gafas",
+      "similar": "Calculadora"
+    },
+    {
+      "word": "Calculadora",
+      "similar": "Percha"
+    },
+    {
+      "word": "Percha",
+      "similar": "Manta"
+    },
+    {
+      "word": "Manta",
+      "similar": "Regla"
+    },
+    {
+      "word": "Regla",
+      "similar": "Lámpara"
+    },
+    {
+      "word": "Médico",
+      "similar": "Profesor"
+    },
+    {
+      "word": "Profesor",
+      "similar": "Bombero"
+    },
+    {
+      "word": "Bombero",
+      "similar": "Cocinero"
+    },
+    {
+      "word": "Cocinero",
+      "similar": "Piloto"
+    },
+    {
+      "word": "Piloto",
+      "similar": "Arquitecto"
+    },
+    {
+      "word": "Arquitecto",
+      "similar": "Policía"
+    },
+    {
+      "word": "Policía",
+      "similar": "Veterinario"
+    },
+    {
+      "word": "Veterinario",
+      "similar": "Periodista"
+    },
+    {
+      "word": "Periodista",
+      "similar": "Fotógrafo"
+    },
+    {
+      "word": "Fotógrafo",
+      "similar": "Carpintero"
+    },
+    {
+      "word": "Carpintero",
+      "similar": "Actor"
+    },
+    {
+      "word": "Actor",
+      "similar": "Músico"
+    },
+    {
+      "word": "Músico",
+      "similar": "Jardinero"
+    },
+    {
+      "word": "Jardinero",
+      "similar": "Electricista"
+    },
+    {
+      "word": "Electricista",
+      "similar": "Abogado"
+    },
+    {
+      "word": "Abogado",
+      "similar": "Científico"
+    },
+    {
+      "word": "Científico",
+      "similar": "Dentista"
+    },
+    {
+      "word": "Dentista",
+      "similar": "Astronauta"
+    },
+    {
+      "word": "Astronauta",
+      "similar": "Mecánico"
+    },
+    {
+      "word": "Mecánico",
+      "similar": "Médico"
+    },
+    {
+      "word": "Volcán",
+      "similar": "Huracán"
+    },
+    {
+      "word": "Huracán",
+      "similar": "Eclipse"
+    },
+    {
+      "word": "Eclipse",
+      "similar": "Galaxia"
+    },
+    {
+      "word": "Galaxia",
+      "similar": "Cometa"
+    },
+    {
+      "word": "Cometa",
+      "similar": "Tornado"
+    },
+    {
+      "word": "Tornado",
+      "similar": "Arcoíris"
+    },
+    {
+      "word": "Arcoíris",
+      "similar": "Glaciar"
+    },
+    {
+      "word": "Glaciar",
+      "similar": "Meteorito"
+    },
+    {
+      "word": "Meteorito",
+      "similar": "Cueva"
+    },
+    {
+      "word": "Cueva",
+      "similar": "Río"
+    },
+    {
+      "word": "Río",
+      "similar": "Bosque"
+    },
+    {
+      "word": "Bosque",
+      "similar": "Coral"
+    },
+    {
+      "word": "Coral",
+      "similar": "Estrella"
+    },
+    {
+      "word": "Estrella",
+      "similar": "Planeta"
+    },
+    {
+      "word": "Planeta",
+      "similar": "Satélite"
+    },
+    {
+      "word": "Satélite",
+      "similar": "Relámpago"
+    },
+    {
+      "word": "Relámpago",
+      "similar": "Nube"
+    },
+    {
+      "word": "Nube",
+      "similar": "Cascada"
+    },
+    {
+      "word": "Cascada",
+      "similar": "Océano"
+    },
+    {
+      "word": "Océano",
+      "similar": "Volcán"
+    }
   ],
-
-  "frutas": [
-    { "word": "Manzana", "similar": "Pera" },
-    { "word": "Plátano", "similar": "Sandía" },
-    { "word": "Naranja", "similar": "Mandarina" },
-    { "word": "Fresa", "similar": "Frambuesa" },
-    { "word": "Uva", "similar": "Pasa" },
-    { "word": "Sandía", "similar": "Melón" },
-    { "word": "Piña", "similar": "Papaya" },
-    { "word": "Mango", "similar": "Papaya" },
-    { "word": "Melocotón", "similar": "Nectarina" },
-    { "word": "Cereza", "similar": "Fresa" },
-    { "word": "Limón", "similar": "Lima" },
-    { "word": "Kiwi", "similar": "Maracuyá" },
-    { "word": "Papaya", "similar": "Mango" },
-    { "word": "Coco", "similar": "Palmera" },
-    { "word": "Aguacate", "similar": "Guacamole" },
-    { "word": "Arándano", "similar": "Mora" },
-    { "word": "Frambuesa", "similar": "Fresa" },
-    { "word": "Mora", "similar": "Arándano" },
-    { "word": "Ciruela", "similar": "Ciruela pasa" },
-    { "word": "Pera", "similar": "Manzana" }
+  "Comida": [
+    {
+      "word": "Pizza",
+      "similar": "Sushi"
+    },
+    {
+      "word": "Sushi",
+      "similar": "Tostada"
+    },
+    {
+      "word": "Tostada",
+      "similar": "Croqueta"
+    },
+    {
+      "word": "Croqueta",
+      "similar": "Empanada"
+    },
+    {
+      "word": "Empanada",
+      "similar": "Tortilla"
+    },
+    {
+      "word": "Tortilla",
+      "similar": "Ensalada"
+    },
+    {
+      "word": "Ensalada",
+      "similar": "Hamburguesa"
+    },
+    {
+      "word": "Hamburguesa",
+      "similar": "Galleta"
+    },
+    {
+      "word": "Galleta",
+      "similar": "Yogur"
+    },
+    {
+      "word": "Yogur",
+      "similar": "Paella"
+    },
+    {
+      "word": "Paella",
+      "similar": "Lasaña"
+    },
+    {
+      "word": "Lasaña",
+      "similar": "Churro"
+    },
+    {
+      "word": "Churro",
+      "similar": "Donut"
+    },
+    {
+      "word": "Donut",
+      "similar": "Bocadillo"
+    },
+    {
+      "word": "Bocadillo",
+      "similar": "Helado"
+    },
+    {
+      "word": "Helado",
+      "similar": "Albóndiga"
+    },
+    {
+      "word": "Albóndiga",
+      "similar": "Gazpacho"
+    },
+    {
+      "word": "Gazpacho",
+      "similar": "Risotto"
+    },
+    {
+      "word": "Risotto",
+      "similar": "Nachos"
+    },
+    {
+      "word": "Nachos",
+      "similar": "Pizza"
+    }
   ],
-  "animales": [
-    { "word": "León", "similar": "Tigre" },
-    { "word": "Tigre", "similar": "Leopardo" },
-    { "word": "Elefante", "similar": "Mamut" },
-    { "word": "Jirafa", "similar": "Okapi" },
-    { "word": "Cebra", "similar": "Caballo" },
-    { "word": "Mono", "similar": "Chimpancé" },
-    { "word": "Panda", "similar": "Oso polar" },
-    { "word": "Koala", "similar": "Oso Perezoso" },
-    { "word": "Canguro", "similar": "Caballo" },
-    { "word": "Pingüino", "similar": "Ballena" },
-    { "word": "Delfín", "similar": "Marsopa" },
-    { "word": "Ballena", "similar": "Orca" },
-    { "word": "Águila", "similar": "Halcón" },
-    { "word": "Búho", "similar": "Lechuza" },
-    { "word": "Loro", "similar": "Pirata" },
-    { "word": "Mariposa", "similar": "Polilla" },
-    { "word": "Cocodrilo", "similar": "Caimán" },
-    { "word": "Hipopótamo", "similar": "Rinoceronte" },
-    { "word": "Rinoceronte", "similar": "Hipopótamo" },
-    { "word": "Guepardo", "similar": "Leopardo" },
-    { "word": "Gorila", "similar": "Orangután" },
-    { "word": "Oso", "similar": "Panda" },
-    { "word": "Lobo", "similar": "Coyote" },
-    { "word": "Zorro", "similar": "Chacal" },
-    { "word": "Ciervo", "similar": "Alce" }
+  "Animales": [
+    {
+      "word": "Delfín",
+      "similar": "Tigre"
+    },
+    {
+      "word": "Tigre",
+      "similar": "Pingüino"
+    },
+    {
+      "word": "Pingüino",
+      "similar": "Jirafa"
+    },
+    {
+      "word": "Jirafa",
+      "similar": "Canguro"
+    },
+    {
+      "word": "Canguro",
+      "similar": "Búho"
+    },
+    {
+      "word": "Búho",
+      "similar": "Pulpo"
+    },
+    {
+      "word": "Pulpo",
+      "similar": "Panda"
+    },
+    {
+      "word": "Panda",
+      "similar": "Lobo"
+    },
+    {
+      "word": "Lobo",
+      "similar": "Camaleón"
+    },
+    {
+      "word": "Camaleón",
+      "similar": "Koala"
+    },
+    {
+      "word": "Koala",
+      "similar": "León"
+    },
+    {
+      "word": "León",
+      "similar": "Erizo"
+    },
+    {
+      "word": "Erizo",
+      "similar": "Águila"
+    },
+    {
+      "word": "Águila",
+      "similar": "Tortuga"
+    },
+    {
+      "word": "Tortuga",
+      "similar": "Zorro"
+    },
+    {
+      "word": "Zorro",
+      "similar": "Hipopótamo"
+    },
+    {
+      "word": "Hipopótamo",
+      "similar": "Flamenco"
+    },
+    {
+      "word": "Flamenco",
+      "similar": "Gorila"
+    },
+    {
+      "word": "Gorila",
+      "similar": "Foca"
+    },
+    {
+      "word": "Foca",
+      "similar": "Delfín"
+    }
   ],
-  "deportes": [
-    { "word": "Fútbol", "similar": "Rugby" },
-    { "word": "Baloncesto", "similar": "Balonmano" },
-    { "word": "Tenis", "similar": "Pádel" },
-    { "word": "Béisbol", "similar": "Rugby" },
-    { "word": "Rugby", "similar": "Fútbol sala" },
-    { "word": "Hockey", "similar": "Golf" },
-    { "word": "Golf", "similar": "Minigolf" },
-    { "word": "Natación", "similar": "Waterpolo" },
-    { "word": "Correr", "similar": "Salto de Longuitud" },
-    { "word": "Ciclismo", "similar": "Triatlón" },
-    { "word": "Boxeo", "similar": "Kickboxing" },
-    { "word": "Lucha", "similar": "Judo" },
-    { "word": "Surf", "similar": "Kitesurf" },
-    { "word": "Esquí", "similar": "Snowboard" },
-    { "word": "Voleibol", "similar": "Voleibol playa" },
-    { "word": "Cricket", "similar": "Béisbol" },
-    { "word": "Rugby", "similar": "Fútbol americano" },
-    { "word": "Bádminton", "similar": "Tenis de mesa" },
-    { "word": "Tiro con arco", "similar": "Tiro olímpico" },
-    { "word": "Esgrima", "similar": "Kendo" },
-    { "word": "Maratón", "similar": "Triatlón" },
-    { "word": "Portero", "similar": "Guardameta" },
-    { "word": "Estadio", "similar": "Pabellón" },
-    { "word": "Campeonato", "similar": "Torneo" },
-    { "word": "Torneo", "similar": "Liga" }
+  "Lugares": [
+    {
+      "word": "Aeropuerto",
+      "similar": "Biblioteca"
+    },
+    {
+      "word": "Biblioteca",
+      "similar": "Hospital"
+    },
+    {
+      "word": "Hospital",
+      "similar": "Museo"
+    },
+    {
+      "word": "Museo",
+      "similar": "Estadio"
+    },
+    {
+      "word": "Estadio",
+      "similar": "Playa"
+    },
+    {
+      "word": "Playa",
+      "similar": "Parque"
+    },
+    {
+      "word": "Parque",
+      "similar": "Castillo"
+    },
+    {
+      "word": "Castillo",
+      "similar": "Estación"
+    },
+    {
+      "word": "Estación",
+      "similar": "Teatro"
+    },
+    {
+      "word": "Teatro",
+      "similar": "Acuario"
+    },
+    {
+      "word": "Acuario",
+      "similar": "Universidad"
+    },
+    {
+      "word": "Universidad",
+      "similar": "Hotel"
+    },
+    {
+      "word": "Hotel",
+      "similar": "Cine"
+    },
+    {
+      "word": "Cine",
+      "similar": "Mercado"
+    },
+    {
+      "word": "Mercado",
+      "similar": "Zoo"
+    },
+    {
+      "word": "Zoo",
+      "similar": "Puerto"
+    },
+    {
+      "word": "Puerto",
+      "similar": "Desierto"
+    },
+    {
+      "word": "Desierto",
+      "similar": "Montaña"
+    },
+    {
+      "word": "Montaña",
+      "similar": "Isla"
+    },
+    {
+      "word": "Isla",
+      "similar": "Aeropuerto"
+    }
   ],
-  "cine": [
-    { "word": "Avatar", "similar": "Dune" },
-    { "word": "Titanic", "similar": "Pearl Harbor" },
-    { "word": "Inception", "similar": "Interestelar" },
-    { "word": "Vengadores", "similar": "Liga de la Justicia" },
-    { "word": "Matrix", "similar": "Tron" },
-    { "word": "Gladiador", "similar": "Braveheart" },
-    { "word": "Tiburón", "similar": "Orca" },
-    { "word": "Rocky", "similar": "Creed" },
-    { "word": "Frozen", "similar": "Brave" },
-    { "word": "Shrek", "similar": "Fiona" },
-    { "word": "Joker", "similar": "El Guasón" },
-    { "word": "Batman", "similar": "Daredevil" },
-    { "word": "Superman", "similar": "Capitán América" },
-    { "word": "Spiderman", "similar": "Flash" },
-    { "word": "La Guerra de las Galaxias", "similar": "Star Trek" },
-    { "word": "Harry Potter", "similar": "Las Crónicas de Narnia" },
-    { "word": "Parque Jurásico", "similar": "El mundo perdido" },
-    { "word": "Terminator", "similar": "Robocop" },
-    { "word": "Depredador", "similar": "Alien" },
-    { "word": "Alien", "similar": "Depredador" },
-    { "word": "Indiana Jones", "similar": "Lara Croft" },
-    { "word": "Godzilla", "similar": "King Kong" },
-    { "word": "Transformers", "similar": "Robocop" },
-    { "word": "Piratas del Caribe", "similar": "La isla del tesoro" }
+  "Transporte": [
+    {
+      "word": "Bicicleta",
+      "similar": "Tren"
+    },
+    {
+      "word": "Tren",
+      "similar": "Avión"
+    },
+    {
+      "word": "Avión",
+      "similar": "Barco"
+    },
+    {
+      "word": "Barco",
+      "similar": "Patinete"
+    },
+    {
+      "word": "Patinete",
+      "similar": "Moto"
+    },
+    {
+      "word": "Moto",
+      "similar": "Helicóptero"
+    },
+    {
+      "word": "Helicóptero",
+      "similar": "Tranvía"
+    },
+    {
+      "word": "Tranvía",
+      "similar": "Submarino"
+    },
+    {
+      "word": "Submarino",
+      "similar": "Autobús"
+    },
+    {
+      "word": "Autobús",
+      "similar": "Taxi"
+    },
+    {
+      "word": "Taxi",
+      "similar": "Cohete"
+    },
+    {
+      "word": "Cohete",
+      "similar": "Furgoneta"
+    },
+    {
+      "word": "Furgoneta",
+      "similar": "Velero"
+    },
+    {
+      "word": "Velero",
+      "similar": "Globo"
+    },
+    {
+      "word": "Globo",
+      "similar": "Teleférico"
+    },
+    {
+      "word": "Teleférico",
+      "similar": "Tractor"
+    },
+    {
+      "word": "Tractor",
+      "similar": "Camión"
+    },
+    {
+      "word": "Camión",
+      "similar": "Metro"
+    },
+    {
+      "word": "Metro",
+      "similar": "Canoa"
+    },
+    {
+      "word": "Canoa",
+      "similar": "Bicicleta"
+    }
   ],
-  "tecnologia": [
-    { "word": "Ordenador", "similar": "Portátil" },
-    { "word": "Movil", "similar": "Tableta" },
-    { "word": "Tableta", "similar": "iPad" },
-    { "word": "Portátil", "similar": "Ordenador" },
-    { "word": "Internet", "similar": "WiFi" },
-    { "word": "WiFi", "similar": "Bluetooth" },
-    { "word": "Bluetooth", "similar": "WiFi" },
-    { "word": "Cámara", "similar": "Videocámara" },
-    { "word": "Televisión", "similar": "Monitor" },
-    { "word": "Radio", "similar": "Podcast" },
-    { "word": "GPS", "similar": "Brújula digital" },
-    { "word": "Dron", "similar": "Helicóptero teledirigido" },
-    { "word": "Robot", "similar": "Androide" },
-    { "word": "Inteligencia Artificial", "similar": "Machine Learning" },
-    { "word": "Realidad Virtual", "similar": "Realidad Aumentada" },
-    { "word": "Computación en la nube", "similar": "Servidor remoto" },
-    { "word": "Base de datos", "similar": "Servidor" },
-    { "word": "Red", "similar": "Internet" },
-    { "word": "Servidor", "similar": "Base de datos" },
-    { "word": "Software", "similar": "Aplicación" },
-    { "word": "Hardware", "similar": "Componente" },
-    { "word": "Procesador", "similar": "Chip" },
-    { "word": "Memoria", "similar": "Disco duro" },
-    { "word": "Teclado", "similar": "Ratón" }
+  "Ocio_y_juegos": [
+    {
+      "word": "Ajedrez",
+      "similar": "Tetris"
+    },
+    {
+      "word": "Tetris",
+      "similar": "Puzle"
+    },
+    {
+      "word": "Baraja de Cartas",
+      "similar": "Puzle"
+    },
+    {
+      "word": "Puzle",
+      "similar": "Karaoke"
+    },
+    {
+      "word": "Karaoke",
+      "similar": "Billar"
+    },
+    {
+      "word": "Billar",
+      "similar": "Dardos"
+    },
+    {
+      "word": "Dardos",
+      "similar": "Consola"
+    },
+    {
+      "word": "Sonic",
+      "similar": "Pokémon"
+    },
+    {
+      "word": "Pokémon",
+      "similar": "Sonic"
+    },
+    {
+      "word": "Monopoly",
+      "similar": "Super Mario"
+    },
+    {
+      "word": "Super Mario",
+      "similar": "Sonic"
+    },
+    {
+      "word": "Trivial",
+      "similar": "Lego"
+    },
+    {
+      "word": "Lego",
+      "similar": "Puzle"
+    },
+    {
+      "word": "Pac-Man",
+      "similar": "Sonic"
+    },
+    {
+      "word": "Patines",
+      "similar": "Billar"
+    },
+    {
+      "word": "Cómic",
+      "similar": "Podcast"
+    },
+    {
+      "word": "Street Fighter",
+      "similar": "Pac-Man"
+    },
+    {
+      "word": "Podcast",
+      "similar": "Cómic"
+    },
+    {
+      "word": "Crucigrama",
+      "similar": "Cómin"
+    },
+    {
+      "word": "Zelda",
+      "similar": "Sonic"
+    }
   ],
-  "musica": [
-    { "word": "Guitarra", "similar": "Bajo" },
-    { "word": "Piano", "similar": "Teclado" },
-    { "word": "Batería", "similar": "Percusión" },
-    { "word": "Violín", "similar": "Viola" },
-    { "word": "Saxofón", "similar": "Clarinete" },
-    { "word": "Trompeta", "similar": "Trombón" },
-    { "word": "Flauta", "similar": "Oboe" },
-    { "word": "Arpa", "similar": "Lira" },
-    { "word": "Acordeón", "similar": "Bandoneón" },
-    { "word": "Armónica", "similar": "Acordeón" },
-    { "word": "Jazz", "similar": "Blues" },
-    { "word": "Rock", "similar": "Metal" },
-    { "word": "Pop", "similar": "Dance" },
-    { "word": "Clásica", "similar": "Ópera" },
-    { "word": "Blues", "similar": "Jazz" },
-    { "word": "Ópera", "similar": "Lírica" },
-    { "word": "Sinfonía", "similar": "Concierto" },
-    { "word": "Concierto", "similar": "Recital" },
-    { "word": "Orquesta", "similar": "Banda" },
-    { "word": "Banda", "similar": "Grupo" },
-    { "word": "Melodía", "similar": "Armonía" },
-    { "word": "Ritmo", "similar": "Cadencia" },
-    { "word": "Armonía", "similar": "Melodía" },
-    { "word": "Compositor", "similar": "Director" },
-    { "word": "Director", "similar": "Compositor" }
+  "Deportes": [
+    {
+      "word": "Fútbol",
+      "similar": "Baloncesto"
+    },
+    {
+      "word": "Baloncesto",
+      "similar": "Tenis"
+    },
+    {
+      "word": "Tenis",
+      "similar": "Natación"
+    },
+    {
+      "word": "Natación",
+      "similar": "Atletismo"
+    },
+    {
+      "word": "Atletismo",
+      "similar": "Voleibol"
+    },
+    {
+      "word": "Voleibol",
+      "similar": "Rugby"
+    },
+    {
+      "word": "Rugby",
+      "similar": "Boxeo"
+    },
+    {
+      "word": "Boxeo",
+      "similar": "Esquí"
+    },
+    {
+      "word": "Esquí",
+      "similar": "Surf"
+    },
+    {
+      "word": "Surf",
+      "similar": "Golf"
+    },
+    {
+      "word": "Golf",
+      "similar": "Ciclismo"
+    },
+    {
+      "word": "Ciclismo",
+      "similar": "Escalada"
+    },
+    {
+      "word": "Escalada",
+      "similar": "Piragüismo"
+    },
+    {
+      "word": "Piragüismo",
+      "similar": "Hockey"
+    },
+    {
+      "word": "Hockey",
+      "similar": "Bádminton"
+    },
+    {
+      "word": "Bádminton",
+      "similar": "Gimnasia"
+    },
+    {
+      "word": "Gimnasia",
+      "similar": "Judo"
+    },
+    {
+      "word": "Judo",
+      "similar": "Pádel"
+    },
+    {
+      "word": "Pádel",
+      "similar": "Esgrima"
+    },
+    {
+      "word": "Esgrima",
+      "similar": "Fútbol"
+    }
   ],
-  "educacion": [
-    { "word": "Matemáticas", "similar": "Álgebra" },
-    { "word": "Ciencia", "similar": "Biología" },
-    { "word": "Historia", "similar": "Geografía" },
-    { "word": "Geografía", "similar": "Historia" },
-    { "word": "Literatura", "similar": "Gramática" },
-    { "word": "Biología", "similar": "Zoología" },
-    { "word": "Química", "similar": "Física" },
-    { "word": "Física", "similar": "Química" },
-    { "word": "Arte", "similar": "Música" },
-    { "word": "Música", "similar": "Arte" },
-    { "word": "Filosofía", "similar": "Psicología" },
-    { "word": "Psicología", "similar": "Sociología" },
-    { "word": "Economía", "similar": "Sociología" },
-    { "word": "Sociología", "similar": "Psicología" },
-    { "word": "Astronomía", "similar": "Astrofísica" },
-    { "word": "Geología", "similar": "Botánica" },
-    { "word": "Botánica", "similar": "Zoología" },
-    { "word": "Zoología", "similar": "Botánica" },
-    { "word": "Álgebra", "similar": "Geometría" },
-    { "word": "Geometría", "similar": "Álgebra" },
-    { "word": "Gramática", "similar": "Vocabulario" },
-    { "word": "Vocabulario", "similar": "Gramática" },
-    { "word": "Enciclopedia", "similar": "Libro de texto" },
-    { "word": "Laboratorio", "similar": "Aula" },
-    { "word": "Libro de texto", "similar": "Enciclopedia" }
+  "Objetos": [
+    {
+      "word": "Lámpara",
+      "similar": "Reloj"
+    },
+    {
+      "word": "Reloj",
+      "similar": "Tijeras"
+    },
+    {
+      "word": "Tijeras",
+      "similar": "Mochila"
+    },
+    {
+      "word": "Mochila",
+      "similar": "Llave"
+    },
+    {
+      "word": "Llave",
+      "similar": "Almohada"
+    },
+    {
+      "word": "Almohada",
+      "similar": "Espejo"
+    },
+    {
+      "word": "Espejo",
+      "similar": "Cepillo"
+    },
+    {
+      "word": "Cepillo",
+      "similar": "Maleta"
+    },
+    {
+      "word": "Maleta",
+      "similar": "Silla"
+    },
+    {
+      "word": "Silla",
+      "similar": "Mesa"
+    },
+    {
+      "word": "Mesa",
+      "similar": "Ventilador"
+    },
+    {
+      "word": "Ventilador",
+      "similar": "Paraguas"
+    },
+    {
+      "word": "Paraguas",
+      "similar": "Linterna"
+    },
+    {
+      "word": "Linterna",
+      "similar": "Cuaderno"
+    },
+    {
+      "word": "Cuaderno",
+      "similar": "Gafas"
+    },
+    {
+      "word": "Gafas",
+      "similar": "Calculadora"
+    },
+    {
+      "word": "Calculadora",
+      "similar": "Percha"
+    },
+    {
+      "word": "Percha",
+      "similar": "Manta"
+    },
+    {
+      "word": "Manta",
+      "similar": "Regla"
+    },
+    {
+      "word": "Regla",
+      "similar": "Lámpara"
+    }
   ],
-  "videojuegos": [
-    { "word": "Minecraft", "similar": "Terraria" },
-    { "word": "Fortnite", "similar": "PUBG" },
-    { "word": "Among Us", "similar": "Project Winter" },
-    { "word": "League of Legends", "similar": "Dota 2" },
-    { "word": "Call of Duty", "similar": "Battlefield" },
-    { "word": "FIFA", "similar": "PES" },
-    { "word": "Pokémon", "similar": "Digimon" },
-    { "word": "Mario kart", "similar": "Crash Team Racing" },
-    { "word": "Zelda", "similar": "Dark Souls" },
-    { "word": "Sonic", "similar": "Mario" },
-    { "word": "Pac-Man", "similar": "Galaga" },
-    { "word": "Tetris", "similar": "Puyo Puyo" },
-    { "word": "Street Fighter", "similar": "Mortal Kombat" },
-    { "word": "Mortal Kombat", "similar": "Street Fighter" }
+  "Profesiones": [
+    {
+      "word": "Médico",
+      "similar": "Profesor"
+    },
+    {
+      "word": "Profesor",
+      "similar": "Bombero"
+    },
+    {
+      "word": "Bombero",
+      "similar": "Cocinero"
+    },
+    {
+      "word": "Cocinero",
+      "similar": "Piloto"
+    },
+    {
+      "word": "Piloto",
+      "similar": "Arquitecto"
+    },
+    {
+      "word": "Arquitecto",
+      "similar": "Policía"
+    },
+    {
+      "word": "Policía",
+      "similar": "Veterinario"
+    },
+    {
+      "word": "Veterinario",
+      "similar": "Periodista"
+    },
+    {
+      "word": "Periodista",
+      "similar": "Fotógrafo"
+    },
+    {
+      "word": "Fotógrafo",
+      "similar": "Carpintero"
+    },
+    {
+      "word": "Carpintero",
+      "similar": "Actor"
+    },
+    {
+      "word": "Actor",
+      "similar": "Músico"
+    },
+    {
+      "word": "Músico",
+      "similar": "Jardinero"
+    },
+    {
+      "word": "Jardinero",
+      "similar": "Electricista"
+    },
+    {
+      "word": "Electricista",
+      "similar": "Abogado"
+    },
+    {
+      "word": "Abogado",
+      "similar": "Científico"
+    },
+    {
+      "word": "Científico",
+      "similar": "Dentista"
+    },
+    {
+      "word": "Dentista",
+      "similar": "Astronauta"
+    },
+    {
+      "word": "Astronauta",
+      "similar": "Mecánico"
+    },
+    {
+      "word": "Mecánico",
+      "similar": "Médico"
+    }
+  ],
+  "Naturaleza_y_ciencia": [
+    {
+      "word": "Volcán",
+      "similar": "Huracán"
+    },
+    {
+      "word": "Huracán",
+      "similar": "Eclipse"
+    },
+    {
+      "word": "Eclipse",
+      "similar": "Galaxia"
+    },
+    {
+      "word": "Galaxia",
+      "similar": "Cometa"
+    },
+    {
+      "word": "Cometa",
+      "similar": "Tornado"
+    },
+    {
+      "word": "Tornado",
+      "similar": "Arcoíris"
+    },
+    {
+      "word": "Arcoíris",
+      "similar": "Glaciar"
+    },
+    {
+      "word": "Glaciar",
+      "similar": "Meteorito"
+    },
+    {
+      "word": "Meteorito",
+      "similar": "Cueva"
+    },
+    {
+      "word": "Cueva",
+      "similar": "Río"
+    },
+    {
+      "word": "Río",
+      "similar": "Bosque"
+    },
+    {
+      "word": "Bosque",
+      "similar": "Coral"
+    },
+    {
+      "word": "Coral",
+      "similar": "Estrella"
+    },
+    {
+      "word": "Estrella",
+      "similar": "Planeta"
+    },
+    {
+      "word": "Planeta",
+      "similar": "Satélite"
+    },
+    {
+      "word": "Satélite",
+      "similar": "Relámpago"
+    },
+    {
+      "word": "Relámpago",
+      "similar": "Nube"
+    },
+    {
+      "word": "Nube",
+      "similar": "Cascada"
+    },
+    {
+      "word": "Cascada",
+      "similar": "Océano"
+    },
+    {
+      "word": "Océano",
+      "similar": "Volcán"
+    }
   ]
 }
