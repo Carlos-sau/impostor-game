@@ -241,7 +241,10 @@ function showRole(gameData) {
                         <p>Toca para revelar</p>
                     </div>
                     <div class="flip-card-back ${isImpostor ? "impostor" : ""}">
-                        <strong>${escapeHtml(player.role)}</strong>
+                        ${isImpostor
+                            ? `🎭 ERES EL IMPOSTOR:<br><strong>${escapeHtml(player.role)}</strong>`
+                            : `🔑 Tu palabra:<br><strong>${escapeHtml(player.role)}</strong>`
+                        }
                     </div>
                 </div>
             </div>
@@ -280,6 +283,9 @@ function nextPlayer(gameData) {
 
 function showStartMessage() {
 
+    // Elegir un jugador aleatorio
+    const randomPlayer = players[Math.floor(Math.random() * players.length)];
+
     document.getElementById("app").innerHTML = `
         <nav class="navbar">
             <a href="index.html" class="logo">
@@ -290,18 +296,26 @@ function showStartMessage() {
         <div class="game-container" style="min-height:80vh; justify-content:center;">
             <div class="game-header" style="text-align:center; margin-top:auto;">
                 <span class="game-label">Todo listo</span>
-                <h1 class="game-title">¡A jugar!</h1>
+                <h1 class="game-title">¡Empieza: ${escapeHtml(randomPlayer)}!</h1>
             </div>
-            <p class="reveal-hint">Ya podéis empezar a debatir y descubrir al impostor.</p>
+
+            <p class="reveal-hint">
+                Ya podéis empezar a debatir y descubrir al impostor.
+            </p>
+
             <div class="game-actions" style="margin-top:auto;">
-                <button class="btn-start ready" id="repeatGameBtn">Jugar con los mismos jugadores</button>
-                <button class="btn-start ready" id="newGameBtn" style="background:transparent; border:1px solid var(--border); color:var(--muted);">↩ Nueva partida</button>
+                <button class="btn-start ready" id="repeatGameBtn">
+                    Jugar con los mismos jugadores
+                </button>
+                <button class="btn-start ready" id="newGameBtn"
+                    style="background:transparent; border:1px solid var(--border); color:var(--muted);">
+                    ↩ Nueva partida
+                </button>
             </div>
         </div>
     `;
 
     document.getElementById("repeatGameBtn").addEventListener("click", () => {
-        // Conserva players y el número de impostores, solo relanza el juego
         const impostorCount = Number(document.getElementById("impostorCount")?.value) || 1;
         const category = document.getElementById("categorySelect")?.value || Object.keys(wordsData)[0];
         const gameData = startGame(players, impostorCount, category);
